@@ -1,9 +1,7 @@
 from sklearn.pipeline import Pipeline
 
-from src.model import get_linear_regression_model
 
-
-def train_model(preprocessor, X_train, y_train):
+def train_model(preprocessor, model, X_train, y_train):
     """
     Train a regression model using a preprocessing pipeline.
 
@@ -11,6 +9,8 @@ def train_model(preprocessor, X_train, y_train):
     ----------
     preprocessor : ColumnTransformer
         Preprocessing pipeline.
+    model :
+        Regression model instance.
     X_train : pd.DataFrame
         Training features.
     y_train : pd.Series
@@ -21,8 +21,6 @@ def train_model(preprocessor, X_train, y_train):
     Pipeline
         Trained model pipeline.
     """
-    model = get_linear_regression_model()
-
     pipeline = Pipeline(
         steps=[
             ("preprocessing", preprocessor),
