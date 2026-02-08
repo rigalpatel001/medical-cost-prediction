@@ -1,0 +1,11 @@
+data:
+  raw_path: data/raw/insurance.csv
+
+model:
+  name: random_forest
+  n_estimators: 200
+  max_depth: 10
+
+training:
+  test_size: 0.2
+  random_state: 42
