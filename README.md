@@ -10,7 +10,6 @@ It demonstrates a **complete end-to-end machine learning workflow**, following i
 - Model explainability
 - Model persistence and inference
 
-.
 ---
 
 ## 🎯 Problem Statement
@@ -128,68 +127,45 @@ The dataset is publicly available and commonly used for regression benchmarking.
 
 ---
 
-## 📂 Project Structure
-
-medical-cost-prediction/
-│
-├── data/
-│ └── raw/
-│ └── insurance.csv
-│
-├── src/
-│ ├── data_loader.py
-│ ├── preprocessing.py
-│ ├── model.py
-│ ├── train.py
-│ ├── tune.py
-│ ├── evaluate.py
-│ ├── explain.py
-│ └── save_load.py
-│
-├── scripts/
-│ ├── quick_test.py
-│ └── predict.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-
----
-
 ## ▶️ How to Run the Project
 
 ### 1️⃣ Create Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
-
-
-### 2️⃣ Install Dependencies
-```bash
-pip install -r requirements.txt
+```
 
 ### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ### 3️⃣ Train Model & Evaluate
 ```python
 python -m scripts.quick_test
+```
 
 ### 4️⃣ Run Inference on New Data
 ```python
 python -m scripts.predict
+```
 
 ### 5️⃣ Run API
 ```python
 uvicorn api:app --reload
 Open:  http://127.0.0.1:8000/docs
+```
 
 ### 6️⃣ Run unit tests
 ```python
 python -m pytest
 
+```
 
 
 📌 Author
