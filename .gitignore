@@ -2,3 +2,10 @@ venv/
 __pycache__/
 outputs/
 *.pyc
+# Model files
+*.joblib
+*.pkl
+model.joblib
+
+# Logs
+*.log
