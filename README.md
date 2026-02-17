@@ -171,7 +171,7 @@ python -m pytest
 📌 Author
 
 Rigal Patel
-Aspiring Machine Learning / AI Engineer
+
 
 
 
